@@ -1,9 +1,10 @@
 import React from 'react'
+import Sidebar from './componenets/Sidebar/Sidebar'
 
 function App() {
   return (
     <div>
-      Heyo
+      <Sidebar/>
     </div>
   )
 }

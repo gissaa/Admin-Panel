@@ -1,11 +1,18 @@
 import React from 'react'
-import Sidebar from './componenets/Sidebar/Sidebar'
+import AddPhoto from './componenets/AddPhoto/AddPhoto'
+import MaterialNavbar from './componenets/Navbar/MaterialNavbar'
+import {BrowserRouter as Router,Route,Switch } from 'react-router-dom'
+import './App.css'
+
 
 function App() {
   return (
-    <div>
-      <Sidebar/>
-    </div>
+      <Router>
+      <MaterialNavbar/>
+        <Switch>
+          <Route path="/addphoto" exact component={AddPhoto}/>
+        </Switch>
+      </Router>
   )
 }
 
